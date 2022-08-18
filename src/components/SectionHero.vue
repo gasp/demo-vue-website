@@ -25,13 +25,8 @@
           <div class="eval">
             <p>Une évaluation gratuite et confidentielle en quelques minutes</p>
             <div>
-              <input
-                type="text"
-                name=""
-                value=""
-                placeholder="votre adresse email"
-              />
-              <button class="btn btn-primary">Évaluer</button>
+              <input type="text" name="" placeholder="votre adresse email" />
+              <button @click="subscribe">Évaluer</button>
             </div>
           </div>
         </div>
@@ -99,6 +94,13 @@ export default defineComponent({
   name: "SectionHero",
   components: {
     BlockWidth,
+  },
+  methods: {
+    subscribe() {
+      this.$router.push({
+        path: "/dashboard",
+      });
+    },
   },
 });
 </script>
