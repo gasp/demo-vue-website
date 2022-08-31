@@ -3,6 +3,8 @@
     <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
+      <div class="spacer"></div>
+      <router-link to="/order">Order</router-link>
     </nav>
   </BlockWidth>
 </template>
@@ -19,6 +21,8 @@ nav
   background-color #fff
   padding 1rem
 
+  .spacer
+    flex 1
   a
     display block
     margin-right 2rem

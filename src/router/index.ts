@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import DashboardView from "../views/DashboardView.vue";
+import OrderView from "../views/OrderView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -27,6 +28,14 @@ const routes: Array<RouteRecordRaw> = [
     component: DashboardView,
     meta: {
       title: "Home",
+    },
+  },
+  {
+    path: "/order",
+    name: "order",
+    component: OrderView,
+    meta: {
+      title: "Order",
     },
   },
 ];

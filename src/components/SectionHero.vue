@@ -26,7 +26,7 @@
             <p>Une évaluation gratuite et confidentielle en quelques minutes</p>
             <div>
               <input type="text" name="" placeholder="votre adresse email" />
-              <button @click="subscribe">Évaluer</button>
+              <button @click="order">Évaluer</button>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default defineComponent({
     BlockWidth,
   },
   methods: {
-    subscribe() {
+    order() {
       this.$router.push({
         path: "/dashboard",
       });
